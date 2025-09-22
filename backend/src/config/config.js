@@ -15,8 +15,8 @@ const config = {
     outputDir: process.env.OUTPUT_DIR || 'outputs',
     nodeEnv: process.env.NODE_ENV || 'development',
     driveFolderId: process.env.DRIVE_FOLDER_ID || "", // Root folder ID containing subfolders
-    driveApiCredentials: process.env.DRIVE_API_CREDENTIALS || "" // JSON string of credentials
-   
+    driveApiCredentials: process.env.DRIVE_API_CREDENTIALS || "", // JSON string of credentials
+    frontendURL: process.env.FRONTEND_URL
 };
 
 export default config;

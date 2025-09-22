@@ -42,7 +42,7 @@ class App {
         // CORS configuration
         this.app.use(cors({
             origin: config.nodeEnv === 'production' 
-                ? ['http://localhost:3000'] // Add your production domains here
+                ? [config.frontendURL] // Add your production domains here
                 : true, // Allow all origins in development
             credentials: true,
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
